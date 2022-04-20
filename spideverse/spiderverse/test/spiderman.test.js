@@ -12,4 +12,18 @@ describe("Test for class spiderman", () => {
       expect(spider.npeliculas).toBe(34);
       expect(spider.cine).toBe("holiwodd");
     });
-  })
+
+    test('test para el getinfo', () => {
+      
+        //aqui estamos llamando a la clase de spiderman (por eso lo importamos) y ya estamos añadiendo los datos  
+           const spider = new Spiderman ("andrew", 32 ,"maguire",34,"holiwodd")
+       
+        
+         expect(spider.getinfo()).toBe("hola soy andrew de holiwodd");
+    })
+    
+  }
+  
+  
+
+  )
